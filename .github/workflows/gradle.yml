@@ -16,9 +16,18 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: clean build --stacktrace
-      - name: Create artifact
+      - name: Create Fabric Build artifact
         uses: actions/upload-artifact@v4
         with:
-           name: Traincraft-1.20.1_Alpha
-           path: build/libs/*
-        
+           name: Traincraft-1.20.1 Alpha Fabric
+           path: fabric/build/libs/*
+      - name: Create Forge Build artifact
+        uses: actions/upload-artifact@v4
+        with:
+           name: Traincraft-1.20.1 Alpha Forge
+           path: forge/build/libs/*
+      - name: Create Forge Build artifact
+        uses: actions/upload-artifact@v4
+        with:
+           name: Traincraft-1.20.1 Alpha Quilt
+           path: quilt/build/libs/*
