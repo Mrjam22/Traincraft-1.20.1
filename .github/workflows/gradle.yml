@@ -26,7 +26,7 @@ jobs:
         with:
            name: Traincraft-1.20.1 Alpha Forge
            path: forge/build/libs/*
-      - name: Create Forge Build artifact
+      - name: Create Quilt Build artifact
         uses: actions/upload-artifact@v4
         with:
            name: Traincraft-1.20.1 Alpha Quilt
