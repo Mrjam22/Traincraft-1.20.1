@@ -16,3 +16,9 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: clean build --stacktrace
+      - name: Create artifact
+        uses: actions/upload-artifact@v4
+        with:
+           name: Traincraft-1.20.1_Alpha
+           path: build/libs/*
+        
