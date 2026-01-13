@@ -1,46 +1,24 @@
-# This workflow will build a Java project with Gradle
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
+name: Java CI
 
-name: Java CI with Gradle
-
-on:
-  push:
-    branches: [ TC4.5-1.7.10 ]
-  pull_request:
-    branches: [ TC4.5-1.7.10 ]
+on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-      
-    - name: Install 7z and extract data
-      run: |
-        sudo apt-get install -y p7zip-full
-        mkdir ~/.gradle
-        mkdir ~/.gradle/caches
-        cd ~/.gradle/caches
-        7z x /home/runner/work/Traincraft-5/Traincraft-5/gradle/caches.7z.001 -y
-        cd /home/runner/work/Traincraft-5/Traincraft-5
-
-
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-      
-    - name: setup with Gradle
-      run: ./gradlew setupDecompWorkspace --refresh-dependencies idea
-
-    - name: Build with Gradle
-      run: ./gradlew setupDecompWorkspace --refresh-dependencies build
-
-    - name: Create artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: TC4-5-Experimental
-        path: build/libs/*
+      - uses: actions/checkout@v2
+      - name: Set up JDK 21
+        uses: actions/setup-java@v2
+        with:
+          java-version: 21
+          distribution: temurin
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: clean build --stacktrace
+      - name: Create artifact
+        uses: actions/upload-artifact@v4
+        with:
+           name: Traincraft-1.20.1_Alpha
+           path: build/libs/*
+        
