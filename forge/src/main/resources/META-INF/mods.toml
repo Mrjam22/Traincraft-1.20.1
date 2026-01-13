@@ -7,7 +7,7 @@ license = "Insert License Here"
 modId = "tc"
 version = "${version}"
 displayName = "Traincraft"
-authors = "Me!"
+authors = "Mrjam22"
 description = '''
 This is an example description! Tell everyone what your mod is about!
 '''

@@ -1,0 +1,216 @@
+[21:52:02] [main/INFO] (cpw.mods.modlauncher.Launcher) ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.20.1-5, --assetsDir, /home/jamiececcarelli/.gradle/caches/fabric-loom/assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, -mixin.config, tc.mixins.json, --mixin.config, tc.mixins.json]
+[21:52:02] [main/INFO] (cpw.mods.modlauncher.Launcher) ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.8 by Eclipse Adoptium; OS Linux arch amd64 version 6.18.3-201.nobara.fc43.x86_64
+[21:52:02] [main/DEBUG] (cpw.mods.modlauncher.LaunchServiceHandler) Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
+[21:52:02] [main/DEBUG] (cpw.mods.modlauncher.NameMappingServiceHandler) Found naming services : [srgtoyarn]
+[21:52:02] [main/INFO] (unprotect) Initializing Unprotect using ModLauncher backend, target: Minecraft and loader classes (minecraft+forge)
+[21:52:02] [main/DEBUG] (cpw.mods.modlauncher.LaunchPluginHandler) Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,unprotect,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[21:52:02] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Discovering transformation services
+[21:52:02] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path GAMEDIR is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run
+[21:52:02] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path MODSDIR is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/mods
+[21:52:02] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path CONFIGDIR is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/config
+[21:52:02] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path FMLCONFIG is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/config/fml.toml
+[21:52:02] [main/WARN] (net.minecraftforge.fml.loading.FMLConfig) Configuration file /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/config/fml.toml is not correct. Correcting
+[21:52:02] [main/INFO] (net.minecraftforge.fml.loading.FMLConfig) Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
+[21:52:02] [main/INFO] (net.minecraftforge.fml.loading.FMLConfig) Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
+[21:52:02] [main/INFO] (net.minecraftforge.fml.loading.FMLConfig) Incorrect key [earlyWindowSquir] was corrected from null to false
+[21:52:02] [main/INFO] (net.minecraftforge.fml.loading.FMLConfig) Incorrect key [earlyWindowShowCPU] was corrected from null to false
+[21:52:02] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Found additional transformation services from discovery services: 
+[21:52:02] [main/INFO] (net.minecraftforge.fml.loading.ImmediateWindowHandler) Loading ImmediateWindowProvider fmlearlywindow
+[21:52:02] [main/INFO] (EARLYDISPLAY) Trying GL version 4.6
+[21:52:02] [main/INFO] (EARLYDISPLAY) If this message is the only thing at the bottom of your log before a crash, you probably have a driver issue.
+
+Possible solutions:
+A) Make sure Minecraft is set to prefer high performance graphics in the OS and/or driver control panel
+B) Check for driver updates on the graphics brand's website
+C) Try reinstalling your graphics drivers
+D) If still not working after trying all of the above, ask for further help on the Forge forums or Discord
+
+You can safely ignore this message if the game starts up successfully.
+[21:52:02] [main/INFO] (EARLYDISPLAY) Requested GL version 4.6 got version 4.6
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Found transformer services : [mixin,fml,ArchitecturyMixinRemapperInjector]
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Transformation services loading
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loading service mixin
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loaded service mixin
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loading service fml
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.LauncherVersion) Found FMLLauncher version 1.0
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML 1.0 loading
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Requesting CoreMods to not apply the fix for ASMAPI.findFirstInstructionBefore by default
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found AccessTransformer version : 8.0.4+66+master.c09db6d7
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found EventBus version : 6.0.5+6.0.5+master.eb8e549b
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Found Runtime Dist Cleaner
+[21:52:03] [main/DEBUG] (net.minecraftforge.coremod.CoreModEngine) CoreMods will preserve legacy behavior of ASMAPI.findFirstInstructionBefore for backwards-compatibility
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) FML found CoreMod version : 5.2.4
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Found ForgeSPI package implementation version 7.0.1+7.0.1+master.d2b38bf6
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Found ForgeSPI package specification 5
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loaded service fml
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loading service ArchitecturyMixinRemapperInjector
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Loaded service ArchitecturyMixinRemapperInjector
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Configuring option handling for services
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Transformation services initializing
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initializing transformation service mixin
+[21:52:03] [main/DEBUG] (mixin) MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@549fe529
+[21:52:03] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/dev.architectury/mixin-patched/0.8.5.12/cf1f787f58d3b08b0cb53ecbba7928c09a1893c8/mixin-patched-0.8.5.12.jar%23116!/ Service=ModLauncher Env=CLIENT
+[21:52:03] [main/DEBUG] (mixin) Initialising Mixin Platform Manager
+[21:52:03] [main/DEBUG] (mixin) Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[21:52:03] [main/DEBUG] (mixin) Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[21:52:03] [main/DEBUG] (mixin) MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[21:52:03] [main/DEBUG] (mixin) Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[21:52:03] [main/DEBUG] (mixin) MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initialized transformation service mixin
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initializing transformation service fml
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Setting up basic FML game directories
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path GAMEDIR is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path MODSDIR is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/mods
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path CONFIGDIR is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/config
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLPaths) Path FMLCONFIG is /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/config/fml.toml
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Loading configuration
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Preparing ModFile
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Preparing launch handler
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Using forgeclientuserdev as launch service
+[21:52:03] [main/DEBUG] (AXFORM) Set name handler Service NameHandler from mcp to srg
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Received command line version data  : VersionInfo[forgeVersion=47.4.10, mcVersion=1.20.1, mcpVersion=20230612.114412, forgeGroup=net.minecraftforge]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.RuntimeDistCleaner) Configuring for Dist CLIENT
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initialized transformation service fml
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initializing transformation service ArchitecturyMixinRemapperInjector
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Initialized transformation service ArchitecturyMixinRemapperInjector
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.NameMappingServiceHandler) Current naming domain is 'mcp'
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.NameMappingServiceHandler) Identified name mapping providers {srg=srgtoyarn:1}
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServicesHandler) Transformation services begin scanning
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Beginning scan trigger - transformation service mixin
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) End scan trigger - transformation service mixin
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Beginning scan trigger - transformation service fml
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLServiceProvider) Initiating mod scan
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.FMLLoader) Scanning for Mod Locators
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModListHandler) Found mod coordinates from lists: []
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found Dependency Locators : (JarInJar:null)
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Scanning for mods and other resources to load. We know 5 ways to find mods
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator {mods folder locator at /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/mods}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModsFolderLocator) Scanning mods dir /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/mods for mods
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {mods folder locator at /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/mods} found 0 candidates or errors
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {mods folder locator at /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/run/mods} found 0 valid mod files
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator {Maven Directory locator for mods []}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {Maven Directory locator for mods []} found 0 candidates or errors
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {Maven Directory locator for mods []} found 0 valid mod files
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator {ExplodedDir locator}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {ExplodedDir locator} found 0 candidates or errors
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator {ExplodedDir locator} found 0 valid mod files
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@270a113f
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.targets.CommonLaunchHandler) Got mod coordinates main%%/home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/build/resources/main:main%%/home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/build/classes/java/main:main%%/home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/bin/main from env
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.targets.CommonLaunchHandler) Found supplied mod coordinates [{main=[/home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/build/resources/main, /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/build/classes/java/main, /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/bin/main]}]
+[21:52:03] [pool-5-thread-1/INFO] (EARLYDISPLAY) GL info: NVIDIA GeForce RTX 2060 SUPER/PCIe/SSE2 GL version 4.6.0 NVIDIA 580.119.02, NVIDIA Corporation
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file forge-1.20.1-47.4.10-minecraft-merged-1.20.1-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.10.jar with {minecraft} mods - versions {1.20.1}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.4.10/ccc533c7dd67e0983217197d7549c8b49e7ab453/javafmllanguage-1.20.1-47.4.10.jar
+[21:52:03] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.4.10/ccc533c7dd67e0983217197d7549c8b49e7ab453/javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.4.10/e9a2879fe3612ea34b9728ec2633304a1e67d480/lowcodelanguage-1.20.1-47.4.10.jar
+[21:52:03] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.4.10/e9a2879fe3612ea34b9728ec2633304a1e67d480/lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.4.10/ec5cefbbc65c67302b8fac317010faab85fa14b9/mclanguage-1.20.1-47.4.10.jar
+[21:52:03] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.4.10/ec5cefbbc65c67302b8fac317010faab85fa14b9/mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.4.10/94dae566be650566ea9115a1414ab76bfcf5a804/fmlcore-1.20.1-47.4.10.jar
+[21:52:03] [main/WARN] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Mod file /home/jamiececcarelli/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.4.10/94dae566be650566ea9115a1414ab76bfcf5a804/fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [/home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/build/resources/main, /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/build/classes/java/main, /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/bin/main]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/forge/build/resources/main
+[21:52:03] [main/ERROR] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@270a113f found an invalid mod file net.minecraftforge.fml.loading.moddiscovery.ModFileInfo@414d5660
+net.minecraftforge.fml.loading.moddiscovery.InvalidModFileException: Illegal version number specified version (main)
+	at net.minecraftforge.fml.loading.moddiscovery.ModInfo.<init>(ModInfo.java:77) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFileInfo.lambda$new$2(ModFileInfo.java:103) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFileInfo.<init>(ModFileInfo.java:104) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFileParser.modsTomlParser(ModFileParser.java:47) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFileParser.readModList(ModFileParser.java:31) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:79) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:68) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider.createMod(AbstractModProvider.java:57) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider.createMod(AbstractModProvider.java:37) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator.lambda$scanMods$6(MinecraftLocator.java:43) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator.scanMods(MinecraftLocator.java:47) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer.discoverMods(ModDiscoverer.java:78) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:?]
+	at net.minecraftforge.fml.loading.FMLLoader.beginModScan(FMLLoader.java:173) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:1.0]
+	at net.minecraftforge.fml.loading.FMLServiceProvider.beginScanning(FMLServiceProvider.java:86) ~[fmlloader-1.20.1-47.4.10.jar%2394!/:1.0]
+	at cpw.mods.modlauncher.TransformationServiceDecorator.runScan(TransformationServiceDecorator.java:112) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.lambda$runScanningTransformationServices$8(TransformationServicesHandler.java:100) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1787) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.runScanningTransformationServices(TransformationServicesHandler.java:102) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:55) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:88) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2398!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[?:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) ~[dev-launch-injector-0.2.1+build.8.jar%23185!/:?]
+	at dev.architectury.transformer.TransformerRuntime.main(TransformerRuntime.java:220) ~[?:?]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [/home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/.gradle/loom-cache/remapped_mods/remapped/dev/architectury/architectury-forge-0cd3bb3a/9.2.14/architectury-forge-0cd3bb3a-9.2.14.jar]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/.gradle/loom-cache/remapped_mods/remapped/dev/architectury/architectury-forge-0cd3bb3a/9.2.14/architectury-forge-0cd3bb3a-9.2.14.jar
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file architectury-forge-0cd3bb3a-9.2.14.jar with {architectury} mods - versions {9.2.14}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [/tmp/15461800865814388873.jar]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /tmp/15461800865814388873.jar
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file 15461800865814388873.jar with {generated_6cf5c02} mods - versions {1}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [/home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/.gradle/loom-cache/remapped_mods/remapped/dev/architectury/architectury-forge-0cd3bb3a/9.2.14/architectury-forge-0cd3bb3a-9.2.14.jar]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/.gradle/loom-cache/remapped_mods/remapped/dev/architectury/architectury-forge-0cd3bb3a/9.2.14/architectury-forge-0cd3bb3a-9.2.14.jar
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file architectury-forge-0cd3bb3a-9.2.14.jar with {architectury} mods - versions {9.2.14}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider) Found META-INF/mods.toml mod of type null: [/tmp/15461800865814388873.jar]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /tmp/15461800865814388873.jar
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file 15461800865814388873.jar with {generated_6cf5c02} mods - versions {1}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced found 8 candidates or errors
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced found 4 invalid mod files
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Locator net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced found 4 valid mod files
+[21:52:03] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file architectury-forge-0cd3bb3a-9.2.14.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced
+[21:52:03] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file 15461800865814388873.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced
+[21:52:03] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file architectury-forge-0cd3bb3a-9.2.14.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced
+[21:52:03] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Found mod file 15461800865814388873.jar of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@74061ced
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.UniqueModListBuilder) Found 2 mods for first modid generated_6cf5c02, selecting most recent based on version data
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.UniqueModListBuilder) Selected file 15461800865814388873.jar for modid generated_6cf5c02 with version 1
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.UniqueModListBuilder) Found 2 mods for first modid architectury, selecting most recent based on version data
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.UniqueModListBuilder) Selected file architectury-forge-0cd3bb3a-9.2.14.jar for modid architectury with version 9.2.14
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Successfully Loaded 2 mods. Attempting to load dependencies...
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer) Trying locator net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@4a2891d1
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator) Failed to load resource META-INF/jarjar/metadata.json from 15461800865814388873.jar, it does not contain dependency information.
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator) Failed to load resource META-INF/jarjar/metadata.json from architectury-forge-0cd3bb3a-9.2.14.jar, it does not contain dependency information.
+[21:52:03] [main/INFO] (net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator) No dependencies to load found. Skipping!
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/.gradle/loom-cache/remapped_mods/remapped/dev/architectury/architectury-forge-0cd3bb3a/9.2.14/architectury-forge-0cd3bb3a-9.2.14.jar
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file architectury-forge-0cd3bb3a-9.2.14.jar with {architectury} mods - versions {9.2.14}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFile) Loading mod file /home/jamiececcarelli/Documents/mods/Traincraft-1.20.1/.gradle/loom-cache/remapped_mods/remapped/dev/architectury/architectury-forge-0cd3bb3a/9.2.14/architectury-forge-0cd3bb3a-9.2.14.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[46,)]]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileParser) Considering mod file candidate /tmp/15461800865814388873.jar
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFileInfo) Found valid mod file 15461800865814388873.jar with {generated_6cf5c02} mods - versions {1}
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModFile) Loading mod file /tmp/15461800865814388873.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[1,)]]
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.moddiscovery.ModValidator) Found 2 mod files with 2 mods
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) End scan trigger - transformation service fml
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) Beginning scan trigger - transformation service ArchitecturyMixinRemapperInjector
+[21:52:03] [main/DEBUG] (ArchitecturyRemapperInjector) We will be injecting our remapper.
+[21:52:03] [main/DEBUG] (ArchitecturyRemapperInjector) We have successfully injected our remapper.
+[21:52:03] [main/DEBUG] (cpw.mods.modlauncher.TransformationServiceDecorator) End scan trigger - transformation service ArchitecturyMixinRemapperInjector
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.LanguageLoadingProvider) Found 0 language providers
+[21:52:03] [main/ERROR] (net.minecraftforge.fml.loading.LanguageLoadingProvider) Missing language javafml version [46,) wanted by architectury-forge-0cd3bb3a-9.2.14.jar
+[21:52:03] [main/ERROR] (net.minecraftforge.fml.loading.LanguageLoadingProvider) Missing language javafml version [1,) wanted by 15461800865814388873.jar
+[21:52:03] [main/DEBUG] (net.minecraftforge.fml.loading.ModSorter) Configured system mods: [minecraft]

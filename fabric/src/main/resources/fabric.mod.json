@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "train.fabric.ExampleModFabric"
+      "train.fabric.TraincraftFabric"
     ],
     "client": [
-      "train.fabric.client.ExampleModFabricClient"
+      "train.fabric.client.TraincraftFabricClient"
     ]
   },
   "mixins": [
