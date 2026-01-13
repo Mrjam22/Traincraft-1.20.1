@@ -14,6 +14,7 @@
 @rem limitations under the License.
 @rem
 
+
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
 @rem
@@ -90,3 +91,4 @@ exit /b %EXIT_CODE%
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
+
