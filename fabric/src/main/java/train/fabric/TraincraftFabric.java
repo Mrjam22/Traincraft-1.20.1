@@ -2,9 +2,9 @@ package train.fabric;
 
 import net.fabricmc.api.ModInitializer;
 
-import train.fabriclike.ExampleModFabricLike;
+import train.fabriclike.TraincraftFabricLike;
 
-public final class ExampleModFabric implements ModInitializer {
+public final class TraincraftFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -12,6 +12,6 @@ public final class ExampleModFabric implements ModInitializer {
         // Proceed with mild caution.
 
         // Run the Fabric-like setup.
-        ExampleModFabricLike.init();
+        TraincraftFabricLike.init();
     }
 }

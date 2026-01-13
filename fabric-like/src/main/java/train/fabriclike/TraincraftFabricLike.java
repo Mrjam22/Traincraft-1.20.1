@@ -1,10 +1,10 @@
 package train.fabriclike;
 
-import train.ExampleMod;
+import train.Traincraft;
 
-public final class ExampleModFabricLike {
+public final class TraincraftFabricLike {
     public static void init() {
         // Run our common setup.
-        ExampleMod.init();
+        Traincraft.init();
     }
 }
