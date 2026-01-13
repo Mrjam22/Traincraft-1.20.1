@@ -8,7 +8,6 @@ pluginManagement {
 }
 
 rootProject.name = 'tc'
-
 include 'common'
 include 'fabric'
 include 'fabric-like'
