@@ -1,107 +1,74 @@
+plugins {
+    id 'dev.architectury.loom' version '1.11-SNAPSHOT' apply false
+    id 'architectury-plugin' version '3.4-SNAPSHOT'
+    id 'com.gradleup.shadow' version '8.3.6' apply false
+}
 
+architectury {
+    minecraft = project.minecraft_version
+}
 
-buildscript {
+allprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
+}
+
+subprojects {
+    apply plugin: 'dev.architectury.loom'
+    apply plugin: 'architectury-plugin'
+    apply plugin: 'maven-publish'
+
+    base {
+        // Set up a suffixed format for the mod jar names, e.g. `example-fabric`.
+        archivesName = "$rootProject.archives_name-$project.name"
+    }
+
     repositories {
-
-        maven {
-            url "https://repo1.maven.org/maven2" 
-        }
-
-
-        jcenter()
-        maven { url = "https://maven.minecraftforge.net/" }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
+        // Add repositories to retrieve artifacts from in here.
+        // You should only use this when depending on other mods because
+        // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+        // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+        // for more information about repositories.
     }
+
+    loom {
+        silentMojangMappingsLicense()
+    }
+
     dependencies {
-      classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.1.+') {
-         changing = true
-     }
+        minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
+        mappings loom.officialMojangMappings()
     }
-}
 
-apply plugin: 'forge'
-apply plugin: 'idea'
+    java {
+        // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+        // if it is present.
+        // If you remove this line, sources will not be generated.
+        withSourcesJar()
 
-
-sourceCompatibility = targetCompatibility = "1.7"
-compileJava { sourceCompatibility = targetCompatibility = "1.7" }
-
-ext.configFile = file "build.properties"
-configFile.withReader {
-    def prop = new Properties()
-    prop.load(it)
-    project.ext.config = new ConfigSlurper().parse prop
-}
-
-
-version = config.modVersion.toString()
-group= "src.train" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Traincraft"
-
-minecraft {
-    version = "1.7.10-10.13.4.1614-1.7.10"
-    runDir = "run"
-    replaceIn "Info.java"
-    replace "@VERSION1@", config.modVersion.toString()
-}
-
-task packApi(type: Jar, dependsOn: "classes") {
-    // Jar will always be updated
-    outputs.upToDateWhen {false}
-    // Set the jar's base name
-    baseName = "Traincraft"
-
-    from (sourceSets.main.output) {
-        excludes.addAll('**/*.info')
-        excludes.addAll('assets/tc/textures/trains')
-        excludes.addAll('assets/tc/sounds')
-        excludes.addAll('assets/tc/sounds.json')
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-}
 
-
-
-
-
-repositories {
-	maven {
-		name "gt"
-		url "https://gregtech.overminddl1.com/"
-	}
-	maven {
-		name "codechicken"
-		url "https://maven.cil.li/"
-	}
-	ivy {
-		name "BuildCraft"
-		artifactPattern "http://www.mod-buildcraft.com/releases/BuildCraft/[revision]/[module]-[revision]-[classifier].[ext]"
-	}
-    maven {
-        name "ChickenBones"
-        url "http://chickenbones.net/maven/"
+    tasks.withType(JavaCompile).configureEach {
+        it.options.release = 17
     }
-}
 
-dependencies {
-	// `compile` will compile it and run with `runClient`/`runServer`
-    // `compileOnly will only compile but not load in dev testing (can still put in the instance mods directory though)
-	compileOnly "li.cil.oc:OpenComputers:MC1.7.10-1.7.2.1204:dev"
-	compileOnly "com.mod-buildcraft:buildcraft:7.1.23:dev"
-	compile "codechicken:CodeChickenLib:1.7.10-1.1.3.136:dev"
-	compile "codechicken:CodeChickenCore:1.7.10-1.0.4.35:dev"
-	compile "codechicken:NotEnoughItems:1.7.10-1.0.4.90:dev"
-    compile "codechicken:ForgeMultipart:1.7.10-1.2.0.345:dev"
+    // Configure Maven publishing.
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                artifactId = base.archivesName.get()
+                from components.java
+            }
+        }
 
-    // quality of life line to simplify importing jars for experimental testing
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-}
-idea
-{
-	module
-	{
-		inheritOutputDirs = true
-	}
+        // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+        repositories {
+            // Add repositories to publish to here.
+            // Notice: This block does NOT have the same function as the block in the top level.
+            // The repositories here will be used for publishing your artifact, not for
+            // retrieving dependencies.
+        }
+    }
 }
