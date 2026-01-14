@@ -11,6 +11,19 @@ architectury {
     loader('quilt')
 }
 
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://beta.cursemaven.com"
+            }
+        }
+        filter {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
 configurations {
     common {
         canBeResolved = true
@@ -30,6 +43,8 @@ configurations {
 
 dependencies {
     modImplementation "org.quiltmc:quilt-loader:$rootProject.quilt_loader_version"
+
+    modImplementation "curse.maven:special-model-loader-782421:4579904"
 
     // Quilt Standard Libraries and QSL.
     modImplementation "org.quiltmc.quilted-fabric-api:quilted-fabric-api:$rootProject.quilted_fabric_api_version"

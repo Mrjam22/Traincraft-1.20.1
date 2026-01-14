@@ -16,7 +16,10 @@
     "entrypoints": {
       "init": [
         "train.quilt.TraincraftQuilt"
-      ]
+      ],
+	  "client": [
+	    "train.quilt.client.TraincraftQuiltClient"
+	  ]
     },
     "depends": [
       {
@@ -34,7 +37,11 @@
       {
         "id": "architectury",
         "version": ">=9.2.14"
-      }
+      },
+	  {
+	    "id": "special-model-loader",
+	    "version": ">=1.2.0"
+	  }
     ]
   },
   "mixin": [

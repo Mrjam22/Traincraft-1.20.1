@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:rail",
+    "minecraft:detector_rail",
+    "minecraft:powered_rail",
+    "minecraft:activator_rail",
+    "tc:normal_track",
+	"tc:track.copper"
+  ]
+}

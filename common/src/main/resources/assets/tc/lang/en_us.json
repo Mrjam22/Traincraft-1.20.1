@@ -1,3 +1,7 @@
 {
-  "item.tc.stake": "Stake"
+  "item.tc.stake": "Stake",
+  "block.tc.track.copper": "Copper Track",
+  "block.tc.normal_track": "Straight (1x1)",
+  "block.tc.stopper" : "Train Buffer",
+  "category.traincraft" : "Traincraft"
 }
