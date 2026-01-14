@@ -8,7 +8,8 @@ to build use the gradlew build command
 <h1> Why Rewrite </h1>
 
 between 1.7.10 and 1.20.1 there are 9 years worth of changes in minecraft and the modding space. 
-there are multiple mod loaders. forge, fabrcmc and quiltmc 
+there are multiple mod loaders. forge, fabrcmc and quiltmc.
+
 a modern version of the mod needs to be built for cross mod-loader development 
 
 there is also the 1.13 addition of datapacks and now in 1.20.1 alot of stuff such as, Crafting Recipes, Loot Tables, Block/Item/Entity/etc Tags,Advancements,Some World Gen and more. use datapacks.
