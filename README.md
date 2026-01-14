@@ -7,7 +7,7 @@ to build use the gradlew build command
 
 <h1> Why Rewrite </h1>
 
-between 1.7.10 and 1,20,1 there are 9 years worth of changes in minecraft and the modding space. 
+between 1.7.10 and 1.20.1 there are 9 years worth of changes in minecraft and the modding space. 
 there are multiple mod loaders. forge, fabrcmc and quiltmc 
 a modern version of the mod needs to be built for cross mod-loader development 
 
