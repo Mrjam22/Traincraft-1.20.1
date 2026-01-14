@@ -13,6 +13,6 @@ a modern version of the mod needs to be built for cross mod-loader development
 
 there is also the 1.13 addition of datapacks and now in 1.20.1 alot of stuff such as, Crafting Recipes, Loot Tables, Block/Item/Entity/etc Tags,Advancements,Some World Gen and more. use datapacks.
 
-Block Models are done in json since 1.8 and lot of blocks in traincraft use custom obj model renderers that will need to be.
+Block Models are done in json since 1.8 and lot of blocks in traincraft use custom obj model renderers that will need to be reworked.
 
 This work in progress version uses Architectury API on forge and Architectury API + Special Model Loader("https://www.curseforge.com/minecraft/mc-mods/special-model-loader") for Fabricmc/Quiltmc.
