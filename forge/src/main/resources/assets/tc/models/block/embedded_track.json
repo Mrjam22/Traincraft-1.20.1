@@ -1,0 +1,8 @@
+{
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "tc:models/custom/track_embedded.obj",
+  "textures": {
+    "particle": "minecraft:block/oak_planks"
+  }
+}

@@ -17,6 +17,7 @@ public class TraincraftQuiltClient implements ClientModInitializer {
 		// TODO Auto-generated method stub
 		SpecialModelLoaderEvents.LOAD_SCOPE.register(location -> Info.MOD_ID.equals(location.getNamespace()));
 		BlockRenderLayerMap.INSTANCE.putBlock(TCBlocks.CopperTrack.get(), RenderType.cutout());
+    	BlockRenderLayerMap.INSTANCE.putBlock(TCBlocks.embedded_track.get(), RenderType.cutout());
 	}
 
 }

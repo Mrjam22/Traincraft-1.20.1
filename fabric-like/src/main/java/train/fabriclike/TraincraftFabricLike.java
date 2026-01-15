@@ -1,7 +1,6 @@
 package train.fabriclike;
 
-import train.Traincraft;
-import train.common.items.TCItems;
+import train.common.Traincraft;
 
 public final class TraincraftFabricLike {
     public static void init() {

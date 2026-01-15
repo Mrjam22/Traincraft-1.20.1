@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tc:block/ballast",
+    "particle": "tc:block/ballast"
+  }
+}

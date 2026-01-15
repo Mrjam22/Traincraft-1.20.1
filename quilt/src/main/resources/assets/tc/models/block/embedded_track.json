@@ -1,0 +1,7 @@
+{
+  "parent": "special-model-loader:builtin/obj",
+  "flip_v": true,
+  "model": "tc:models/custom/track_embedded.obj",
+  "particle": "minecraft:block/oak_planks",
+  "render_type": "cutout"
+}

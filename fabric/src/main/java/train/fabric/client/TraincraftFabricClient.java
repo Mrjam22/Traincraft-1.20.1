@@ -13,5 +13,6 @@ public final class TraincraftFabricClient implements ClientModInitializer {
         // This entrypoint is suitable for setting up client-specific logic, such as rendering.
     	SpecialModelLoaderEvents.LOAD_SCOPE.register(location -> Info.MOD_ID.equals(location.getNamespace()));
     	BlockRenderLayerMap.INSTANCE.putBlock(TCBlocks.CopperTrack.get(), RenderType.cutout());
+    	BlockRenderLayerMap.INSTANCE.putBlock(TCBlocks.embedded_track.get(), RenderType.cutout());
     }
 }

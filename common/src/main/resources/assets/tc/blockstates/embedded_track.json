@@ -1,0 +1,46 @@
+{
+  "variants": {
+    "shape=ascending_east": {
+      "model": "tc:block/embedded_track",
+      "y": 90
+    },
+    "shape=ascending_north": {
+      "model": "tc:block/embedded_track"
+    },
+    "shape=ascending_south": {
+      "model": "tc:block/embedded_track"
+    },
+    "shape=ascending_west": {
+      "model": "tc:block/embedded_track",
+      "y": 90
+    },
+    "shape=east_west": {
+      "model": "tc:block/embedded_track",
+      "y": 90
+    },
+    "shape=north_south": {
+      "model": "tc:block/embedded_track"
+    },
+    "shape=ascending_east": {
+      "model": "tc:block/embedded_track",
+      "y": 90
+    },
+    "shape=ascending_north": {
+      "model": "tc:block/embedded_track"
+    },
+    "shape=ascending_south": {
+      "model": "tc:block/embedded_track"
+    },
+    "shape=ascending_west": {
+      "model": "tc:block/embedded_track",
+      "y": 90
+    },
+    "shape=east_west": {
+      "model": "tc:block/embedded_track",
+      "y": 90
+    },
+    "shape=north_south": {
+      "model": "tc:block/embedded_track"
+    }
+  }
+}

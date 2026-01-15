@@ -4,7 +4,7 @@ import dev.architectury.platform.forge.EventBuses;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import train.Traincraft;
+import train.common.Traincraft;
 import train.library.Info;
 
 @Mod(Info.MOD_ID)
