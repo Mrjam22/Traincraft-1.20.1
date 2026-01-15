@@ -15,15 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      
-    - name: Install 7z and extract data
-      run: |
-        sudo apt-get install -y p7zip-full
-        mkdir ~/.gradle
-        mkdir ~/.gradle/caches
-        cd ~/.gradle/caches
-        7z x /home/runner/work/Traincraft-5/Traincraft-5/gradle/caches.7z.001 -y
-        cd /home/runner/work/Traincraft-5/Traincraft-5
 
 
     - name: Set up JDK 1.8
